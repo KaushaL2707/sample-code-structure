@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node init && node src/index.js",
     "migrate": "node src/migrations/migrate.js",
     "test": "jest",
-    "start:dev": "nodemon app.js --env=dev"
+    "start:dev": "node init && nodemon app.js --env=dev"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.674.0",
